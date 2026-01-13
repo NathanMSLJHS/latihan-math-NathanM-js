@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function add(){
+            var n1 = document.getElementById("in1").value;
+            var n2 = document.getElementById("in2").value;
+            var hs = Number(n1) + Number(n2);
+            document.getElementById("out2").innerHTML = hs;
+        }
+
+        function minus(){
+            var n1 = document.getElementById("in1").value;
+            var n2 = document.getElementById("in2").value;
+            var hs = Number(n1) - Number(n2);
+            document.getElementById("out2").innerHTML = hs;
+        }
+
+        function multiply(){
+            var n1 = document.getElementById("in1").value;
+            var n2 = document.getElementById("in2").value;
+            var hs = Number(n1) * Number(n2);
+            document.getElementById("out2").innerHTML = hs;
+        }
+
+        function divide(){
+            var n1 = document.getElementById("in1").value;
+            var n2 = document.getElementById("in2").value;
+            var hs = Number(n1) / Number(n2);
+            document.getElementById("out2").innerHTML = hs;
+        }
+
+        function clearInput(){
+            document.getElementById("in1").value = '';
+            document.getElementById("in2").value = '';
+            document.getElementById("out2").innerHTML = "....";
+        }
+    </script>
+</head>
+<body>
+    <p>JavaScript Simple Math Calculator</p>
+    <p><input type ="text" id = "in1"></p>
+    <p><input type ="text" id = "in2"></p>
+    <p id="out1">_____________________</p>
+    <p id="out2">....</p>
+    <p>
+        <button onclick="add()" style="background-color: chartreuse;">+</button>
+        <button onclick="minus()" style="background-color: rgb(255, 0, 0);">-</button>
+        <button onclick="divide()" style="background-color: rgb(238, 255, 0);">/</button>
+        <button onclick="multiply()" style="background-color: rgb(255, 157, 0);">x</button>
+        <button onclick="clearInput()"style="background-color: azure;">C</button>
+    </p>
+</body>
+</html>
